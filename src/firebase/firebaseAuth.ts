@@ -2,7 +2,6 @@ import { signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { createMMKV } from 'react-native-mmkv';
 import { auth } from "./firebaseConfig";
 
-// Buat instance MMKV
 export const storage = createMMKV();
 
 export const login = async (email: string, password: string) => {

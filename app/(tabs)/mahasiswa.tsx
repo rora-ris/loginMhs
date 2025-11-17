@@ -1,9 +1,8 @@
-// app/(tabs)/mahasiswa.tsx
-import React, { useEffect, useState } from "react";
-import { View, FlatList, Text, Button, ActivityIndicator, StyleSheet } from "react-native";
-import { fetchMahasiswa, Mahasiswa } from "../../src/firebase/firestoreService";
-import { logout } from "../../src/firebase/firebaseAuth";
 import { useRouter } from "expo-router";
+import React, { useEffect, useState } from "react";
+import { ActivityIndicator, Button, FlatList, StyleSheet, Text, View } from "react-native";
+import { logout } from "../../src/firebase/firebaseAuth";
+import { fetchMahasiswa, Mahasiswa } from "../../src/firebase/firestoreService";
 
 export default function MahasiswaScreen() {
   const router = useRouter();
@@ -41,7 +40,6 @@ export default function MahasiswaScreen() {
         )}
       />
 
-      {/* Logout di bawah */}
       <View style={styles.logoutContainer}>
         <Button title="Logout" onPress={handleLogout} />
       </View>
