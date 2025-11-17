@@ -20,7 +20,7 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.rora.loginmhs"
+      "package": "com.example.loginmhs"
     },
     "web": {
       "output": "static",
